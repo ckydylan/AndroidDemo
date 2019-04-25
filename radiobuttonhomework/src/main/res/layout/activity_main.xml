@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="请选择你喜欢的英雄          "
+        android:textColor="@android:color/holo_red_dark"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        />
+
+    <ImageView
+        android:id="@+id/img_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/spider"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:maxWidth="300dp"
+        android:maxHeight="300dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgroup_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <RadioButton
+            android:id="@+id/rbtn_spider"
+            android:transitionName="spider"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="蜘蛛侠"/>
+        <RadioButton
+            android:id="@+id/rbtn_cap"
+            android:transitionName="cap"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="美国队长"/>
+        <RadioButton
+            android:id="@+id/rbtn_ironMan"
+            android:transitionName="iron_man"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="钢铁侠"/>
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/rgroup_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <RadioButton
+            android:id="@+id/rbtn_thor"
+            android:transitionName="thor"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="雷神"/>
+        <RadioButton
+            android:id="@+id/rbtn_logi"
+            android:transitionName="logi"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="洛基"/>
+        <RadioButton
+            android:id="@+id/rbtn_doc"
+            android:transitionName="doc"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="奇异博士"/>
+    </RadioGroup>
+
+</LinearLayout>
