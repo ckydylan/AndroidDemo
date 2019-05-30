@@ -10,5 +10,5 @@
         android:layout_gravity="center"
         android:textSize="100px"
         android:textColor="#F5000000"
-        android:text="欢迎使用学生控件"/>
+        android:text="欢迎使用学生空间"/>
 </FrameLayout>

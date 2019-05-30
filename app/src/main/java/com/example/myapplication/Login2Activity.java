@@ -12,14 +12,15 @@ import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.support.annotation.Nullable;
-import android.support.v4.app.NotificationCompat;
+import androidx.annotation.Nullable;
+import androidx.core.app.NotificationCompat;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 public class Login2Activity extends Activity {
     Button showDialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,19 +36,20 @@ public class Login2Activity extends Activity {
         });
 
         //判断版本
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             String channelId = "test";
             String channelName = "测试";
             int importance = NotificationManager.IMPORTANCE_DEFAULT;
-            createNotificationChannel(channelId,channelName,importance);
+            createNotificationChannel(channelId, channelName, importance);
 
-             channelId = "chat";
-             channelName = "聊天消息";
-             importance = NotificationManager.IMPORTANCE_HIGH;
+            channelId = "chat";
+            channelName = "聊天消息";
+            importance = NotificationManager.IMPORTANCE_HIGH;
             createNotificationChannel(channelId, channelName, importance);
 
         }
     }
+
     @TargetApi(Build.VERSION_CODES.O)
     private void createNotificationChannel(String channelId, String channelName, int importance) {
         NotificationChannel channel = new NotificationChannel(channelId, channelName, importance);
@@ -59,11 +61,10 @@ public class Login2Activity extends Activity {
     }
 
 
-
     public void sendSubscribeMsg(View view) {
         NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         Notification notification = new NotificationCompat.Builder(this, "subscribe")
-                .setContentTitle("收到一条订阅消息")
+                .setContentTitle("收到一条消息")
                 .setContentText("我是一个信息！")
                 .setWhen(System.currentTimeMillis())
                 .setSmallIcon(R.drawable.head_img)
@@ -95,14 +96,12 @@ public class Login2Activity extends Activity {
                 .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.head_img))
                 .setAutoCancel(true)
                 .build();
-        manager.notify(1, notification);
+        manager.notify(5, notification);
     }
 
 
-
-
     private void showListDialog() {
-        final String[] items = { "我是1","我是2","我是3","我是4" };
+        final String[] items = {"我是1", "我是2", "我是3", "我是4"};
         AlertDialog.Builder listDialog =
                 new AlertDialog.Builder(Login2Activity.this);
         listDialog.setTitle("我是一个列表Dialog");
@@ -117,6 +116,5 @@ public class Login2Activity extends Activity {
         });
         listDialog.show();
     }
-
 
 }

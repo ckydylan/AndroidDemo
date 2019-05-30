@@ -1,1 +1,1 @@
-include ':app', ':imageviewdemo', ':checkboxdemo', ':t2_3_radiobutton', ':ontouchdemo', ':radiobuttonhomework', ':menudemo', ':adaptdemo', ':fragmentdemo'
+include ':app', ':imageviewdemo', ':checkboxdemo', ':t2_3_radiobutton', ':ontouchdemo', ':radiobuttonhomework', ':menudemo', ':adaptdemo', ':fragmentdemo', ':layoutDemo', ':t3_5_style', ':activitydemo', ':callactivity', ':classfragmentdemo', ':classfragmentdemo2', ':homefragmentdemo', ':homefragmentdemo2', ':classadaptdemo', ':homeadaptdemo', ':classspinnerdemo'

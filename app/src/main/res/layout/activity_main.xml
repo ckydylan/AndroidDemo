@@ -25,12 +25,12 @@
             android:textColor="#ffffff" />
 
         <Button
+            android:id="@+id/btn_sign_in"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:text="sign in"
             android:background="@android:color/transparent"
-
             android:textColor="#fff"/>
 
     </RelativeLayout>

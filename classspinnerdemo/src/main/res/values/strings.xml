@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">classspinnerdemo</string>
+    <string name="nanjing_prompt">南京</string>
+    <string-array name="nanjing">
+        <item>栖霞区</item>
+        <item>江宁区</item>
+        <item>秦淮区</item>
+        <item>鼓楼区</item>
+    </string-array>
+</resources>

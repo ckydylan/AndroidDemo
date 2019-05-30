@@ -2,21 +2,15 @@ package com.example.myapplication;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.text.InputFilter;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.text.DecimalFormat;
 
 public class ForthActivity extends Activity {
     ImageView imgHead;

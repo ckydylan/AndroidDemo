@@ -14,14 +14,7 @@
         android:maxWidth="100dp"
         android:maxHeight="100dp"
         android:layout_gravity="center"/>
-    <!--<Spinner-->
-        <!--android:id="@+id/my_spinner"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--&gt;-->
-        <!--&lt;!&ndash;android:entries="@array/id"&ndash;&gt;-->
 
-    <!--</Spinner>-->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

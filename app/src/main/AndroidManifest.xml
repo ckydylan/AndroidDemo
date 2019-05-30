@@ -15,26 +15,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"/>
+        <activity android:name=".LoginActivity" />
 
         <activity android:name=".ThridActivity">
             <intent-filter>
-                <action android:name="thr_avtivity"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="thr_avtivity" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".ForthActivity">
             <intent-filter>
-                <action android:name="for_avtivity"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="for_avtivity" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".Login2Activity">
             <intent-filter>
-                <action android:name="log_activity"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="log_activity" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
